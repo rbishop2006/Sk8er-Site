@@ -8,7 +8,7 @@ html {
 }
 @media only screen and (max-width: 600px) {
   body {
-    grid-template-columns: 1fr;
+    background-color: lightgray;
   }
 }
 body {
