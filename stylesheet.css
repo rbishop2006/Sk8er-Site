@@ -1,0 +1,364 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherent;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+body {
+  background-image: url(assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+.container {
+  max-width: 950px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.subscribe {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.25em;
+  border-right: 5px dotted white;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  height: 25px;
+  margin-top: 10px;
+}
+i {
+  font-size: 2.5em;
+  color: rgb(180 180 180);
+  opacity: 50%;
+}
+.facebook,
+.rss,
+.twitter,
+.youTube {
+  padding: 10px 7px 10px 0;
+  border-bottom: 4px solid gray;
+  margin-left: 7px;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
+.facebook {
+  background-color: rgb(58 79 138);
+}
+.rss {
+  background-color: rgb(196 130 51);
+}
+.twitter {
+  background-color: rgb(94 132 190);
+}
+.youTube {
+  background-color: rgb(167 45 43);
+}
+nav .navBar li > a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin: 0 0 10px 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+ul > li {
+  list-style-type: none;
+  font-size: 0.75em;
+  background-color: rgb(160 29 42);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 10px 0 10px 0;
+  border-bottom: 3px solid gray;
+}
+.pic {
+  height: 100px;
+  border: 10px solid white;
+}
+.camera {
+  width: auto;
+  height: 350px;
+  background-image: url(assets/top-image.png);
+  background-size: 140%;
+  background-position: 25% 25%;
+  background-repeat: no-repeat;
+  border: 8px solid white;
+  margin-bottom: 50px;
+  position: relative;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  margin-top: 55px;
+  margin-left: 20px;
+}
+.grid {
+  width: 100%;
+  height: 350px;
+  opacity: 0.3;
+}
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  background-color: transparent;
+  color: gray;
+}
+article {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 3px solid gray;
+  padding: 15px;
+  position: relative;
+}
+h2 {
+  font-size: 1.5em;
+  color: rgb(80 80 80);
+}
+date {
+  color: lightgray;
+  font-size: 0.75em;
+}
+p {
+  font-size: 0.75em;
+  line-height: 2.5em;
+}
+.readMore {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+  text-decoration: none;
+  color: rgb(160 29 42);
+}
+.tonyHawk {
+  position: relative;
+}
+.tonyHawk::after {
+  content: "skateboarders";
+  z-index: 1;
+  background-color: rgb(160 29 42);
+  display: inline;
+  padding: 30px;
+  border-bottom: 3px solid gray;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 0px;
+  position: absolute;
+  top: 535px;
+  left: -275px;
+}
+.tonyHawk::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 45.5px 0 45.5px 30px;
+  border-color: transparent transparent transparent #a11d2a;
+  display: inline;
+  position: absolute;
+  top: 535px;
+  left: -49px;
+}
+.names {
+  height: 500px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  margin-top: 30px;
+  position: relative;
+}
+.lanceMountain {
+  background-image: url(assets/sk8er-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 95%;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 1;
+  border: 5px solid white;
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid gray;
+  text-align: center;
+  padding-top: 75px;
+}
+.rodneyMullen {
+  background-image: url(assets/sk8er-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-row-start: 1;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  border: 5px solid white;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  padding-top: 75px;
+  font-weight: 700;
+}
+.tommyGuerrero {
+  background-image: url(assets/sk8er-2.png);
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+  grid-column-start: 3;
+  grid-column-end: span 2;
+  border: 5px solid white;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  padding-top: 200px;
+  font-weight: 700;
+}
+.steveCabellero {
+  background-image: url(assets/sk8er-1.png);
+  background-size: 115%;
+  background-repeat: no-repeat;
+  background-position: 30% 70%;
+  grid-row-start: 2;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border: 5px solid white;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 3px solid gray;
+  padding-top: 90px;
+  font-weight: 700;
+}
+.skateboards {
+  height: 300px;
+  border-bottom: 3px solid gray;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  margin-top: 30px;
+}
+footer {
+  height: 375px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  border-bottom: 3px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+.contact {
+  margin-left: 30px;
+  padding: 10px;
+}
+.contact > p {
+  color: gray;
+  font-size: 0.75em;
+  padding-bottom: 10px;
+}
+h3 {
+  color: gray;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.facebookBottom,
+.rssBottom,
+.twitterBottom,
+.youTubeBottom {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+}
+.facebookBottom > i,
+.rssBottom > i,
+.twitterBottom > i,
+.youTubeBottom > i {
+  font-size: 1.24em;
+  text-align: center;
+  padding-top: 2px;
+  color: lightgray;
+}
+.facebookBottom {
+  background-color: rgb(70 70 70);
+}
+.rssBottom {
+  background-color: rgb(165 165 165);
+}
+.twitterBottom {
+  background-color: rgb(111 111 111);
+}
+.youTubeBottom {
+  background-color: rgb(106 106 106);
+}
+#name,
+#email,
+#yourMessage,
+#placeholder {
+  display: block;
+  width: 85%;
+  margin: 30px;
+  height: 30px;
+  font-size: 1em;
+  padding-left: 5px;
+  border-top: 3px solid gray;
+  border-left: 3px solid gray;
+}
+#yourMessage {
+  padding-bottom: 75px;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+#name,
+#email {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+#submit {
+  height: 40px;
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1em;
+  text-align: center;
+  margin-left: 211px;
+  padding-top: 5px;
+  color: white;
+  background-color: rgb(160 29 42);
+  border: none;
+}
